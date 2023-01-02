@@ -1,0 +1,95 @@
+Algorithm for MEMORY ALLOCATION
+
+Main function: should act as a driver function. U give inputs here . They include process size,block size,bloc number and process number.
+
+ALGORITHM BESTFIT(process_number,blocks_number,block_size,process_size):
+// Implements Best Fit algorithm
+// return type void
+
+    allocation[process_number]→NULL
+
+    for i<process_number:
+        allocation[i]=-1
+    end loop
+    
+    for i<process_number:
+        IndexPlaced = -1
+
+        for j<blocks_number:
+            if IndexPlaced=-1
+                IndexPlaced=j
+            else if block_size[j]<block_size[IndexPlaced]:
+                IndexPlaced=j
+            enf if
+        end loop
+
+        if IndexPlaced is not -1
+            allocation[i]=IndexPlaced
+            block_size[IndexPlaced]-=process_size[i]
+        end if
+
+    end loop
+    print process_number process_size and allocated block number (allocation)
+END ALGORITHM
+
+ALGORITHM First_Fit(process_number,blocks_number,block_size,process_size)
+// Implements first fit algorithm 
+// return type: void
+    
+    allocation[process_number]→NULL
+    occupied[block_number]→NULL
+
+    for i<process_number:
+        allocation[i]=-1
+    end loop
+
+    for i<block_number:
+        occupied[i]=0
+    endloop
+
+    for i<process_number:
+        for j<block_number:
+            if occupied[j] is 0 and block size >= process size:
+                allocate[i]=j
+                occupied[j]=1
+                break
+            end if
+        end loop
+    end loop
+    
+    print process_number process_size and allocated block number (allocation)
+END ALGORITHM
+    
+ALGORITHM Worst_Fit(process_number,blocks_number,block_size,process_size)
+// Implements Best Fit algorithm
+// return type void
+    allocation[process_number]→NULL
+    occupied[block_number]→NULL
+
+    for i<process_number:
+        allocation[i]=-1
+    end loop
+
+    for i<block_number:
+        occupied[i]=0
+    endloop
+
+    for j<blocks_number:
+            if IndexPlaced=-1
+                IndexPlaced=j
+            else if block_size[j]>block_size[IndexPlaced]:
+                IndexPlaced=j
+            end if
+        end loop
+
+        if IndexPlaced is not -1
+            allocation[i]=IndexPlaced
+            occupied=1
+            block_size[IndexPlaced]-=process_size[i]
+        end if
+    end loop
+
+    print everything
+END ALGORITHM
+
+

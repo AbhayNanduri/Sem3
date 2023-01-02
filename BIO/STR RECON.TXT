@@ -1,0 +1,45 @@
+AAT ATG GTT TAA TGT
+
+
+TAA
+ AAT
+  ATG
+   TGT
+    GTT
+
+TAATGTT
+
+
+
+
+AAT ATG ATG ATG CAT CCA GAT GCC GGA GGG GTT TAA TGC TGG TGT
+
+
+=> AAT ATGx3 CAT CCA GAT GCC GGA GGG GTT TAA TGC TGG TGT
+
+a)TAA
+   AAT
+    ATG
+     TGC
+	GCC
+	 CCA
+	  CAT
+
+b) TAA
+    AAT
+     ATG
+	TGG
+	 GGA
+
+c) TAA
+    AAT
+     ATG
+	TGG
+	 GGG
+
+d) TAA
+    AAT
+     ATG
+	TGT
+												
+	 GTT
